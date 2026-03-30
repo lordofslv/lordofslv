@@ -9,52 +9,101 @@
             color: purple;
             font-family: Arial, sans-serif;
             text-align: center;
+            margin: 0;
         }
+
         .container {
             padding: 20px;
         }
-        .text-box {
-            margin: 15px;
-            font-size: 20px;
+
+        h1 {
+            margin-bottom: 20px;
         }
-        .images img {
-            width: 200px;
-            margin: 10px;
-            border-radius: 10px;
-        }
+
         .search-box {
             margin: 20px;
         }
+
+        .search-box input {
+            padding: 10px;
+            width: 250px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .search-box button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: purple;
+            color: white;
+            cursor: pointer;
+        }
+
+        .text-box {
+            margin: 15px;
+            font-size: 18px;
+        }
+
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .images a {
+            margin: 10px;
+        }
+
+        .images img {
+            width: 200px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .images img:hover {
+            transform: scale(1.05);
+        }
     </style>
 </head>
-<body>
 
+<body>
 <div class="container">
 
     <h1>Data About SLV</h1>
 
-    <!-- سێرچ -->
+    <!-- Search -->
     <div class="search-box">
-        <input type="text" placeholder="Search data about slv...">
+        <input type="text" placeholder="Search data about SLV...">
         <button>Search</button>
     </div>
 
-    <!-- ٥ شوێنی دەق -->
-    <div class="text-box">سۆلاڤ ناسراو بە دەسپەڕچی</div>
-    <div class="text-box">ئەو کچەی یان ئەو قەهبەی دەسپەڕی بە ئینستاگرامەوە ناساند</div>
-    <div class="text-box">شکاندنی ڕیکۆردی ڕووبەڕێکی شەهوەتاو نێزیک لە لافاو</div>
-    <div class="text-box">نازناوی دەسپەڕ وەک مەدالیایێکێ زێڕین بوو بۆ ئەو</div>
-    <div class="text-box">ئیتر ئەمەش پێویست بوو وەک مێژوویێیەک بمێنیتەوە.</div>
+    <!-- Text Content (cleaned & neutral) -->
+    <div class="text-box">سۆلاڤ کەسێکی ناسراوە لەسەر تۆڕە کۆمەڵایەتیەکان.</div>
+    <div class="text-box">ناوبانگی بەهۆی چالاکییەکانی لە ئینستاگرام زیاد بووە.</div>
+    <div class="text-box">لە کاتی کورتدا توانی شوێنی خۆی لە ناو فالووەراندا بکات.</div>
+    <div class="text-box">نازناو و ناسنامەی تایبەتی خۆی درووست کردووە.</div>
+    <div class="text-box">ئەمە بووە هۆکاری ئەوەی کە ناوی بڵاو بێتەوە.</div>
 
-    <!-- ٤ وێنە -->
+    <!-- Images -->
     <div class="images">
-        <img src="https://via.placeholder.com/200" alt="img1">
-        <img src="https://via.placeholder.com/200" alt="img2">
-        <img src="https://via.placeholder.com/200" alt="img3">
-        <img src="https://via.placeholder.com/200" alt="img4">
+        <a href="https://postimg.cc/bZdmcshS" target="_blank">
+            <img src="https://i.postimg.cc/t4Nw6xvk/photo-2026-03-30-20-17-37-(2).jpg" alt="image1">
+        </a>
+
+        <a href="https://postimg.cc/FfWCk3VC" target="_blank">
+            <img src="https://i.postimg.cc/bJ87MRDP/photo-2026-03-30-20-17-38.jpg" alt="image2">
+        </a>
+
+        <a href="https://postimg.cc/HcPLNZ4p" target="_blank">
+            <img src="https://i.postimg.cc/90cqrsDq/photo-2026-03-30-20-17-36.jpg" alt="image3">
+        </a>
+
+        <a href="https://postimg.cc/67W5pJMG" target="_blank">
+            <img src="https://i.postimg.cc/yN9Jn79n/photo-2026-03-30-20-17-37.jpg" alt="image4">
+        </a>
     </div>
 
 </div>
-
 </body>
 </html>
